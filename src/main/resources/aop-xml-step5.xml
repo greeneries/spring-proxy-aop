@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+		
+	<context:component-scan base-package="com.example.demo.aop.xml.step5"/>		
+	
+	<!--  
+	<aop:config proxy-target-class="true">
+		<aop:pointcut expression="execution(* one*(..))" id="before-pointcut"/>
+		<aop:pointcut expression="execution(* add*(..))" id="around-pointcut"/>
+		<aop:pointcut expression="execution(* two*(..))" id="myafter-pointcut"/>
+		
+		<aop:aspect ref="myAspect">
+			<aop:before method="beforeTest" pointcut-ref="before-pointcut" />
+			<aop:around method="aroundTest" pointcut-ref="around-pointcut" />
+			<aop:after-returning method="myAfterReturning" pointcut-ref="myafter-pointcut" />
+			<aop:after-throwing method="myAfterThrowing" pointcut-ref="myafter-pointcut" />
+			<aop:after method="myAfter" pointcut-ref="myafter-pointcut" />
+		</aop:aspect>
+	</aop:config>
+	-->
+
+	<!-- AOP 설정을 annotation으로 하기 위한 설정   -->		
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+
+</beans>
