@@ -3,6 +3,7 @@ package com.example.demo.proxy.step2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+//마우스 오른쪽 클릭 > Run As > Java Application으로 실행 
 @Component
 public class Test { // Test는 Hello를 사용하는 Client 역할이다.
 	@Autowired

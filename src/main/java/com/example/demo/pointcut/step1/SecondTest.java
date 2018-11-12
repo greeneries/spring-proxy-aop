@@ -6,7 +6,7 @@ import org.springframework.aop.aspectj.AspectJExpressionPointcut;
 import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 
-
+//마우스 오른쪽 클릭 > Run As > Java Application으로 실행 
 public class SecondTest {
 	public static void main(String[] args) {
 		Advice advice = new MyAdvice();

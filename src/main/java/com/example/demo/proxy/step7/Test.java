@@ -6,6 +6,9 @@ import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+
+//마우스 오른쪽 클릭 > Run As > Java Application으로 실행 
+
 @Component
 public class Test { // 클라이언트 입장에서는 자기가 어떤 객체를 사용하는지 몰라야 한다.
 

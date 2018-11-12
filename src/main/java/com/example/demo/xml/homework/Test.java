@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
+// 마우스 오른쪽 클릭 > Run As > Java Application으로 실행 
 public class Test {
 
 	public static void main(String[] args) {
